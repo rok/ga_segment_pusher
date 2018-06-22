@@ -6,4 +6,3 @@
 #pypi-publisher
 apiclient
 oauth2client
-logging

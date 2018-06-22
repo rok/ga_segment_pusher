@@ -20,12 +20,15 @@ To install use pip:
 Or clone the repo:
 
     $ git clone https://github.com/rok/ga_segment_pusher.git
-    $ python setup.py install
-    
-Contributing
-------------
+    $ python setup.py install    
 
-TBD
+Issues
+------
+
+In case of `ModuleNotFoundError: No module named 'apiclient.http'` error run the following command in the command line.
+```bash
+pip install --upgrade google-api-python-client
+```
 
 Example
 -------
@@ -45,3 +48,8 @@ analytics = ga_segment_pusher.get_service(key_file_location)
 
 ga_segment_pusher.upload_csv(csv_file_location, analytics, **upload_params)
 ```
+
+Contributing
+------------
+
+TBD
