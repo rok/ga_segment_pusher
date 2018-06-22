@@ -29,7 +29,7 @@ TBD
 
 Example
 -------
-
+```python
 import ga_segment_pusher
 
 key_file_location = 'credentials.json'
@@ -44,3 +44,4 @@ upload_params = {
 analytics = ga_segment_pusher.get_service(key_file_location)
 
 ga_segment_pusher.upload_csv(csv_file_location, analytics, **upload_params)
+```
